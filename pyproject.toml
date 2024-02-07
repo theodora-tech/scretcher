@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "scretcher"
+version = "0.1.0"
+description = "A python project for a web scraper and enricher for the EQT code test"
+authors = ["Viktor Ek <viktor@theodoratech.se>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -4,6 +4,8 @@ A scraper and enricher for portfolio companies of EQT/Motherbrain, built for the
 
 # Installation
 
+This package uses as mix of `nix` packages and `poetry` to handle development and running dependencies.
+
 ## Installing Nix (and direnv)
 
 > :information_source: If you already have NixOS installed, just skip ahead.
@@ -20,7 +22,12 @@ For `direnv` the easiest way is probably still to use `brew` and install it usin
 eval "$(direnv hook zsh)"
 ```
 
+After this has been done, navigate to the folder, run `direnv allow`. You should se some installation actions happen, and move on to the python-only installations.
+
 ## Using Homebrew
 
 TODO Fill me in
 
+## Installing Python-only dependecies
+
+After your dev-shell has been activated, you can now move on to install any other dependecies not handled via Nix by running `just install`.

@@ -10,7 +10,16 @@
       in
       {
         devShells.default = pkgs.mkShell {
-          packages = [ pkgs.bashInteractive ];
+          packages = [
+            pkgs.bashInteractive
+            pkgs.poetry
+            pkgs.just
+            pkgs.python311
+            pkgs.ruff
+            pkgs.python311Packages.scrapy
+            pkgs.python311Packages.google-cloud-storage
+            pkgs.python311Packages.jsonlines
+          ];
         };
       });
 }

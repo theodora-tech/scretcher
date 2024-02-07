@@ -1,0 +1,3 @@
+# Make sure venvs are always create within the project
+[virtualenvs]
+in-project = true
