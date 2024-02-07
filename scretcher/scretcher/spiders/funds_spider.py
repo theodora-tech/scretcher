@@ -3,8 +3,8 @@ from pathlib import Path
 import scrapy
 
 
-class QuotesSpider(scrapy.Spider):
-    name = "quotes"
+class FundsSpider(scrapy.Spider):
+    name = "funds"
 
     def start_requests(self):
         urls = [

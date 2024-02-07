@@ -2,12 +2,13 @@ import scrapy
 
 from scrapy.selector import Selector
 
-class QuotesSpider(scrapy.Spider):
+class PortfolioCompaniesSpider(scrapy.Spider):
     name = "portfolio_companies"
 
     def start_requests(self):
         urls = [
             "https://eqtgroup.com/current-portfolio/",
+            "https://eqtgroup.com/current-portfolio/divestments/"
         ]
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
