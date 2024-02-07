@@ -17,6 +17,7 @@
             pkgs.python311
           ];
           shellHook = ''
+            # TODO Consider fixing this one better!
             source .venv/bin/activate
           '';
         };
