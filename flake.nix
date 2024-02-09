@@ -15,6 +15,7 @@
             pkgs.poetry
             pkgs.just
             pkgs.python311
+            pkgs.jq
           ];
           shellHook = ''
             # TODO Consider fixing this one better!

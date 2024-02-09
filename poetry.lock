@@ -315,6 +315,16 @@ testing = ["covdefaults (>=2.3)", "coverage (>=7.3.2)", "diff-cover (>=8)", "pyt
 typing = ["typing-extensions (>=4.8)"]
 
 [[package]]
+name = "genson"
+version = "1.2.2"
+description = "GenSON is a powerful, user-friendly JSON Schema generator."
+optional = false
+python-versions = "*"
+files = [
+    {file = "genson-1.2.2.tar.gz", hash = "sha256:8caf69aa10af7aee0e1a1351d1d06801f4696e005f06cedef438635384346a16"},
+]
+
+[[package]]
 name = "google-api-core"
 version = "2.16.2"
 description = "Google API client core library"
@@ -1187,4 +1197,4 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "672c62d6135530353efc21bca23654962621a8aaa30b6c094cd6832ef5d5b646"
+content-hash = "7bd638681cac7a6133a9e2400f11d9a3c268171165047f4b22190754950b7d84"
