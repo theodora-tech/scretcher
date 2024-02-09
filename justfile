@@ -26,3 +26,7 @@ generate-data-schema:
 scrape-portfolio-companies-data:
   #!/usr/bin/env bash
   cd scretcher && scrapy crawl portfolio_companies -O ../data/scraped_portfolio_companies.jsonl
+
+# enrich the portfolio data with reference data
+enrich-portfolio-data:
+  python enricher/src/process_data.py

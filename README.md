@@ -31,6 +31,7 @@ Run the following commands to install system dependencies with brew.
 ```bash
 brew install bash
 brew install just
+brew install jq
 ```
 
 Poetry also needs to be installed, see [here](https://python-poetry.org/docs/#installing-with-pipx) for how to do that.
@@ -41,4 +42,5 @@ After your dev-shell has been activated, you can now move on to install any othe
 
 # Usage
 
-* **Scrape portfolio companies data** (from the public page): `just scrape-portfolio-companies-data`. This will downloadt the scraped data in jsonlines to the `./data` folder in this repo.
+* **Scrape portfolio companies data** (from the public page): `just scrape-portfolio-companies-data`. This will download the scraped data in jsonlines to the `./data` folder in this repo.
+* **Process and enrich the company data**: `just enrich-portfolio-data`
