@@ -13,6 +13,10 @@ check:
 fix:
   black .
 
+
+test:
+  pytest
+
 # generate json schema from the data files, and print to stdout
 generate-data-schema:
   #!/usr/bin/env bash

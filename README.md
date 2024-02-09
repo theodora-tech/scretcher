@@ -47,6 +47,12 @@ After your dev-shell has been activated, you can now move on to install any othe
 * **Scrape portfolio companies data** (from the public page): `just scrape-portfolio-companies-data`. This will download the scraped data in jsonlines to the `./data` folder in this repo.
 * **Process and enrich the company data**: `just enrich-portfolio-data`
 
+## Test
+
+`just test`
+
+**Note** There is one failing test, because I discovered duplicates too late in the process. Hence why you should always test your data!
+
 # Outputs
 
 The resulting dataset is ouput as a gzipped jsonlines file in the `output/` folder in this repo.
