@@ -26,6 +26,8 @@ After this has been done, navigate to the folder, run `direnv allow`. You should
 
 ## Using Homebrew
 
+> :information_source: When using this method, make sure to start poetry shell by running `poetry shell` before running the code.
+
 Run the following commands to install system dependencies with brew.
 
 ```bash
@@ -44,3 +46,8 @@ After your dev-shell has been activated, you can now move on to install any othe
 
 * **Scrape portfolio companies data** (from the public page): `just scrape-portfolio-companies-data`. This will download the scraped data in jsonlines to the `./data` folder in this repo.
 * **Process and enrich the company data**: `just enrich-portfolio-data`
+
+# Limitations
+
+* We assume that company names match exactly, which is fragile, but gets the job done
+* The way to get unique organizations from the organization data is very fragile, but gets the jobs done
