@@ -1,3 +1,6 @@
+default:
+  just --list
+
 # install (python) dependencies
 install:
   poetry install
@@ -10,5 +13,11 @@ check:
 fix:
   ruff . --fix
 
-# generate json schema from the data files
+# generate json schema from the data files, and print to stdout
 generate-data-schema:
+  #!/usr/bin/env bash
+  for filename in data/*.json; do
+    [ -e "$filename" ] || continue
+    echo "Schema for $filename"
+    genson $filename | jq .
+  done
