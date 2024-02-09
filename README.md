@@ -47,7 +47,13 @@ After your dev-shell has been activated, you can now move on to install any othe
 * **Scrape portfolio companies data** (from the public page): `just scrape-portfolio-companies-data`. This will download the scraped data in jsonlines to the `./data` folder in this repo.
 * **Process and enrich the company data**: `just enrich-portfolio-data`
 
+# Outputs
+
+The resulting dataset is ouput as a gzipped jsonlines file in the `output/` folder in this repo.
+
 # Limitations
 
 * We assume that company names match exactly, which is fragile, but gets the job done
-* The way to get unique organizations from the organization data is very fragile, but gets the jobs done
+* The way to get unique organizations from the organization data is very fragile, but gets the job done
+* Many configuration values are currently hard-coded, but it shouls be an easy task to change them to be read from config
+* The scraping way to find the appropriate data is also fragile, due to the higly nested structure of the source data

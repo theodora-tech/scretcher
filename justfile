@@ -7,11 +7,11 @@ install:
 
 # check code style
 check:
-  ruff .
+  black . --check
 
 # fix/format code style
 fix:
-  ruff . --fix
+  black .
 
 # generate json schema from the data files, and print to stdout
 generate-data-schema:

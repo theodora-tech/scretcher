@@ -8,13 +8,12 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 requests = "^2.31.0"
-ruff = "^0.2.1"
 jsonlines = "^4.0.0"
 scrapy = "^2.11.0"
-google-cloud-storage = "^2.14.0"
 genson = "^1.2.2"
 pandas = "^2.2.0"
 loguru = "^0.7.2"
+black = "^24.1.1"
 
 [build-system]
 requires = ["poetry-core"]
