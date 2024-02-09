@@ -1,5 +1,4 @@
 from enricher.src.process_data import list_agg
-import numpy as np
 
 
 def test_list_agg_with_nulls():
