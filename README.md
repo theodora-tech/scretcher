@@ -38,3 +38,7 @@ Poetry also needs to be installed, see [here](https://python-poetry.org/docs/#in
 ## Installing Python-only dependecies
 
 After your dev-shell has been activated, you can now move on to install any other dependecies not handled via Nix by running `just install`, or fall back to the `poetry install` command which essentially does the same thing. If you went the nix route, hop in and out of the folder once, to make sure the post-hook that activates the python virtual env can run properly.
+
+# Usage
+
+* **Scrape portfolio companies data** (from the public page): `just scrape-portfolio-companies-data`. This will downloadt the scraped data in jsonlines to the `./data` folder in this repo.
