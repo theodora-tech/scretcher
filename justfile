@@ -19,7 +19,7 @@ generate-data-schema:
   for filename in data/*.json; do
     [ -e "$filename" ] || continue
     echo "Schema for $filename"
-    genson $filename | jq .
+    genson $filename | jq --sort-keys .
   done
 
 # Scrape the portfolio company data
