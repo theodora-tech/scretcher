@@ -21,3 +21,8 @@ generate-data-schema:
     echo "Schema for $filename"
     genson $filename | jq .
   done
+
+# Scrape the portfolio company data
+scrape-portfolio-companies-data:
+  #!/usr/bin/env bash
+  cd scretcher && scrapy crawl portfolio_companies -O ../data/scraped_portfolio_companies.jsonl
