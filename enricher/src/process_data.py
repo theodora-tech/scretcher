@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 def list_agg(values):
-    return ", ".join(set(filter(None, values)))
+    return ", ".join(sorted(set(filter(None, values))))
 
 
 def load_base_df(path="data/scraped_portfolio_companies.jsonl"):
